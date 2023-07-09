@@ -24,3 +24,13 @@ Examples:
       As the triplet that maximize the sum {12 , 29 , 0} in order, their sum is (41),
       Note: duplications are not included when summing, (i.e) the numbers added only once.
 */
+
+
+// Solution
+
+function maxTriSum(numbers) {
+  return [...new Set(numbers)]
+    .sort((a,b) => a - b)
+    .slice(-3)
+    .reduce((acc,el) => acc + el);
+}
