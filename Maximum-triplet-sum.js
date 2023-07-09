@@ -35,3 +35,4 @@ function maxTriSum(numbers) {
     .reduce((acc,el) => acc + el);
 }
 
+// or
